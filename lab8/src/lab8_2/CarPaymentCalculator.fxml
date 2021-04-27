@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane alignment="TOP_CENTER" hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="291.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab8_2.CarPaymentCalculatorController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="99.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="143.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="汽车价格" />
+      <Label text="首付金额" GridPane.rowIndex="1" />
+      <Label text="贷款年利率" GridPane.rowIndex="2" />
+      <Label text="贷款持续时间" GridPane.rowIndex="3" />
+      <Label text="每月还款" GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" onAction="#calculateButtonPressed" prefHeight="30.0" prefWidth="169.0" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <TextField fx:id="carPriceTextField" GridPane.columnIndex="1" />
+      <TextField fx:id="downPaymentTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="loanDurationTextField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="monthlyPaymentTextField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ChoiceBox fx:id="loanRateChoiceBox" prefHeight="30.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+</GridPane>

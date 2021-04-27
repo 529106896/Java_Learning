@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab9_2.GUI_2_Controller">
+   <top>
+      <Pane prefHeight="97.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#116bbf" height="98.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+            <Button layoutX="12.0" layoutY="34.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Current" />
+            <Button layoutX="125.0" layoutY="34.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Projected" />
+            <ImageView fx:id="imageView1" fitHeight="51.0" fitWidth="48.0" layoutX="538.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="454.0" layoutY="14.0" mnemonicParsing="false" text="Save" />
+            <Button layoutX="517.0" layoutY="14.0" mnemonicParsing="false" text="Cancel" />
+         </children>
+      </Pane>
+   </bottom>
+   <left>
+      <VBox prefHeight="234.0" prefWidth="122.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="48.0" prefWidth="122.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="74.0" text="Data">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Hyperlink layoutX="27.0" text="Sales" />
+                  <Hyperlink layoutX="27.0" layoutY="28.0" text="Marketing" />
+                  <Hyperlink layoutX="27.0" layoutY="56.0" text="Distribution" />
+                  <Hyperlink layoutX="27.0" layoutY="84.0" text="Costs" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView2" fitHeight="73.0" fitWidth="102.0" layoutX="22.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="117.0" layoutY="14.0" prefHeight="27.0" prefWidth="58.0" text="Plants">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label layoutX="117.0" layoutY="40.0" text="Clean your air" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="97.0" prefHeight="34.0" prefWidth="113.0" text="Oxygen +">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageView3" fitHeight="111.0" fitWidth="149.0" layoutX="124.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="297.0" layoutY="107.0" text="More Comfortable" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
