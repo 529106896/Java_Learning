@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab9_6.slidersController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="453.0" minHeight="10.0" prefHeight="439.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="259.0" minHeight="10.0" prefHeight="181.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <VBox alignment="CENTER" prefHeight="232.0" prefWidth="217.0" spacing="30.0">
+               <children>
+                  <Label text="Opacity Level" />
+                  <Label text="Sepia Level" />
+                  <Label text="Scaling Factor" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="232.0" prefWidth="234.0" spacing="30.0">
+               <children>
+                  <Slider fx:id="opacityLevelSlider" />
+                  <Slider fx:id="sepiaLevelSlider" />
+                  <Slider fx:id="scalingFactorSlider" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="232.0" prefWidth="207.0" spacing="30.0">
+               <children>
+                  <Label fx:id="opacityLevelLabel" text="0.00" />
+                  <Label fx:id="sepiaLevelLabel" text="0.00" />
+                  <Label fx:id="scalingFactorLabel" text="0.00" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="imageView1" fitHeight="374.0" fitWidth="643.0" pickOnBounds="true" preserveRatio="true" />
+            <Label text="Notice: The default values of Opacity Level and Scaling Factor are 0.00">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="Please set Opacity Level and Scaling Factor FIRST!">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
