@@ -14,6 +14,7 @@ public class GUI_1 extends Application
 		Parent root = FXMLLoader.load(getClass().getResource("GUI_1.fxml"));
 		
 		Scene scene = new Scene(root);
+		scene.getStylesheets().add("file:src/lab9_1/sample.css");
 		stage.setTitle("GUI_1");
 		stage.setScene(scene);
 		stage.show();
