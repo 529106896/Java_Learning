@@ -27,9 +27,9 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="232.0" prefWidth="234.0" spacing="30.0">
                <children>
-                  <Slider fx:id="opacityLevelSlider" />
+                  <Slider fx:id="opacityLevelSlider" value="100.0" />
                   <Slider fx:id="sepiaLevelSlider" />
-                  <Slider fx:id="scalingFactorSlider" />
+                  <Slider fx:id="scalingFactorSlider" value="100.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="232.0" prefWidth="207.0" spacing="30.0">
@@ -43,17 +43,7 @@
       </HBox>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <ImageView fx:id="imageView1" fitHeight="374.0" fitWidth="643.0" pickOnBounds="true" preserveRatio="true" />
-            <Label text="Notice: The default values of Opacity Level and Scaling Factor are 0.00">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </Label>
-            <Label text="Please set Opacity Level and Scaling Factor FIRST!">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <ImageView fx:id="imageView1" fitHeight="412.0" fitWidth="643.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </VBox>
    </children>

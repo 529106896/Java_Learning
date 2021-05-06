@@ -19,7 +19,7 @@ public class slidersController
 	@FXML private Slider sepiaLevelSlider;
 	@FXML private Slider scalingFactorSlider;
 	private SepiaTone sepiaEffect = new SepiaTone();
-	private double opacityLevel = 0.0;
+	private double opacityLevel = 1.0;
 	
 	public void initialize()
 	{
@@ -28,8 +28,9 @@ public class slidersController
 		
 		imageView1.setOpacity(opacityLevel);
 		opacityLevelLabel.setText(String.format("%.2f", opacityLevel));
-		imageView1.setScaleX(0);
-		imageView1.setScaleY(0);
+		scalingFactorLabel.setText(String.format("%.2f", 1.0));
+		imageView1.setScaleX(1.0);
+		imageView1.setScaleY(1.0);
 		
 		opacityLevelSlider.valueProperty().addListener
 		(
