@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="172.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab11_1.studentInformationController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addInformationButton" mnemonicParsing="false" onAction="#addInformationButtonPressed" text="新增" />
+            <Button fx:id="deleteInformationButton" mnemonicParsing="false" onAction="#deleteInformationButtonPressed" text="删除" />
+            <Button fx:id="modifyInformationButton" mnemonicParsing="false" onAction="#modifyInformationButtonPressed" text="修改" />
+            <Button fx:id="searchInformationButton" mnemonicParsing="false" onAction="#searchInformationButtonPressed" text="查询" />
+            <Button fx:id="displayInformationButton" mnemonicParsing="false" onAction="#displayInformationButtonPressed" text="显示" />
+            <Button fx:id="lastInformationButton" mnemonicParsing="false" onAction="#lastInformationButtonPressed" text="上一条" />
+            <Button fx:id="nextInformationButton" mnemonicParsing="false" onAction="#nextInformationButtonPressed" text="下一条" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" maxHeight="400.0" maxWidth="500.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="showTextArea" editable="false" maxWidth="500.0" prefHeight="82.0" prefWidth="500.0" promptText="Show Information Here" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
