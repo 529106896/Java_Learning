@@ -45,7 +45,7 @@ public class studentInformationController
 	private File file;
 	private int currentDisplayPosition;
 	private boolean isAddSuccessful = true;
-	private boolean isSearchSuccessful = false;
+
 	private ArrayList<String> wrongInformation = new ArrayList<>();
 	private Pattern studentCodePattern = Pattern.compile("^[0-9]+$");
 	private Matcher studentCodeMatcher;
@@ -303,6 +303,7 @@ public class studentInformationController
 	
 	public void searchInformationButtonPressed(ActionEvent e) throws IOException
 	{
+		boolean isSearchSuccessful = false;
 		TextInputDialog dialog = new TextInputDialog("Input here");
 		dialog.setTitle("查询学生记录");
 		dialog.setHeaderText("格式：姓名");

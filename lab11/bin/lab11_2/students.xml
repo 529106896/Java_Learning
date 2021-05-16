@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<students>
+    <student>
+        <studentEmail>529106896@qq.com</studentEmail>
+        <studentName>袁佳哲</studentName>
+        <studentNumber>1192051</studentNumber>
+        <studentPhoneNumber>1860389</studentPhoneNumber>
+    </student>
+    <student>
+        <studentEmail>512@qq.com</studentEmail>
+        <studentName>dwadwa</studentName>
+        <studentNumber>123451</studentNumber>
+        <studentPhoneNumber>45123</studentPhoneNumber>
+    </student>
+    <student>
+        <studentEmail>1231@qq.com</studentEmail>
+        <studentName>小李飞刀</studentName>
+        <studentNumber>118</studentNumber>
+        <studentPhoneNumber>18603</studentPhoneNumber>
+    </student>
+    <student>
+        <studentEmail>5132@126.com</studentEmail>
+        <studentName>达瓦达瓦</studentName>
+        <studentNumber>84515645</studentNumber>
+        <studentPhoneNumber>5412341</studentPhoneNumber>
+    </student>
+</students>
