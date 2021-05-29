@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="133.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bigHomework.turntoController">
+   <children>
+      <Label layoutX="39.0" layoutY="17.0" text="行号(L)：" />
+      <TextField fx:id="turntoTextField" layoutX="39.0" layoutY="37.0" prefHeight="30.0" prefWidth="326.0" />
+      <Button fx:id="turntoConfirmButton" layoutX="201.0" layoutY="85.0" mnemonicParsing="false" onAction="#turntoConfirmButtonPressed" text="转到" />
+      <Button fx:id="turntoCancelButton" layoutX="265.0" layoutY="85.0" mnemonicParsing="false" onAction="#turntoCancelButtonPressed" text="取消" />
+   </children>
+</Pane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" vgap="8.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab13_4.PainterController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" prefHeight="464.0" prefWidth="134.0" spacing="8.0">
+<children>
+            <TitledPane animated="false" text="图形" xmlns:fx="http://javafx.com/fxml">
+<content>
+                  <VBox spacing="8.0">
+<children>
+                        <RadioButton fx:id="circleShapeButton" layoutX="240.90002632141113" layoutY="172.9" mnemonicParsing="false" onAction="#shapeRadioButtonSelected" selected="true" text="圆形" AnchorPane.leftAnchor="4.0">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="shapeToggleGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="rectangleShapeButton" layoutX="240.90002632141113" layoutY="155.9" mnemonicParsing="false" onAction="#shapeRadioButtonSelected" text="矩形" toggleGroup="$shapeToggleGroup" AnchorPane.leftAnchor="4.0" />
+</children>
+<opaqueInsets>
+<Insets />
+</opaqueInsets>
+                  </VBox>
+</content>
+</TitledPane>
+            <TitledPane animated="false" text="边框" xmlns:fx="http://javafx.com/fxml">
+<content>
+                  <VBox spacing="8.0">
+<children>
+                        <RadioButton fx:id="dashLineButton" layoutX="166.0" layoutY="325.5" mnemonicParsing="false" onAction="#lineModeRadioButtonSelected" text="虚线">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="lineToggleGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="solidLineButton" layoutX="166.0" layoutY="340.5" mnemonicParsing="false" onAction="#lineModeRadioButtonSelected" selected="true" text="实线" toggleGroup="$lineToggleGroup" />
+</children>
+                  </VBox>
+</content>
+</TitledPane>
+            <TitledPane animated="false" prefHeight="104.0" prefWidth="134.0" text="填充">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                     <children>
+                        <RadioButton fx:id="colorFillButton" mnemonicParsing="false" onAction="#colorFillButtonPressed" text="纯色">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="fillModeToggleGroup" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="textureFillButton" mnemonicParsing="false" onAction="#textureFillButtonPressed" text="纹理" toggleGroup="$fillModeToggleGroup" />
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+            <Button mnemonicParsing="false" onAction="#undoButtonPressed" text="撤销" />
+            <Button mnemonicParsing="false" onAction="#clearButtonPressed" text="清空" />
+</children>
+      </VBox>
+      <AnchorPane fx:id="drawingArea" maxHeight="464.0" maxWidth="482.0" minHeight="464.0" minWidth="482.0" onMousePressed="#drawingAreaMousePressed" onMouseReleased="#drawingAreaMouseReleased" prefHeight="464.0" prefWidth="482.0" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+</children>
+<padding>
+<Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+</padding>
+</GridPane>
