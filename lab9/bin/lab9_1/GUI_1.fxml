@@ -13,11 +13,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.collections.FXCollections?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox prefHeight="79.0" prefWidth="408.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="86.0" prefWidth="151.0" spacing="5.0">
+            <VBox alignment="CENTER" prefHeight="79.0" prefWidth="188.0" spacing="5.0">
                <children>
                   <RadioButton fx:id="radioButton1" mnemonicParsing="false" selected="true" text="High">
                      <toggleGroup>
@@ -27,15 +27,15 @@
                   <RadioButton fx:id="radioButton3" mnemonicParsing="false" text="Low" toggleGroup="$group" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="66.0" prefWidth="125.0" spacing="5.0">
+            <VBox alignment="CENTER" prefHeight="79.0" prefWidth="211.0" spacing="5.0">
                <children>
                   <TextField promptText="Your name" />
                   <PasswordField promptText="Your password" />
                </children>
             </VBox>
-            <VBox alignment="BOTTOM_RIGHT" prefHeight="79.0" prefWidth="132.0">
+            <VBox alignment="BOTTOM_CENTER" prefHeight="79.0" prefWidth="178.0">
                <children>
-                  <ChoiceBox prefHeight="30.0" prefWidth="122.0" value="English">
+                  <ChoiceBox prefHeight="30.0" prefWidth="158.0" value="English">
                   	<items>
                   		<FXCollections fx:factory="observableArrayList">
                   			<String fx:value="English" />
@@ -48,19 +48,19 @@
             </VBox>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="54.0" prefWidth="408.0" spacing="60.0">
+      <HBox alignment="CENTER" prefHeight="98.0" prefWidth="460.0" spacing="60.0">
          <children>
-            <Button mnemonicParsing="false" text="Accept" />
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="79.0" text="Decline" />
-            <StackPane prefHeight="54.0" prefWidth="124.0">
+            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="187.0" text="Accept" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="197.0" text="Decline" />
+            <StackPane prefHeight="98.0" prefWidth="188.0">
                <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" stroke="BLACK" strokeDashArray="2" strokeLineCap="BUTT" strokeType="INSIDE" width="110.0" />
-                  <Label text="Not Available" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e4cb" height="47.0" stroke="BLACK" strokeDashArray="2" strokeLineCap="BUTT" strokeType="INSIDE" width="195.0" />
+                  <Label prefHeight="47.0" prefWidth="179.0" text="Not Available" />
                </children>
             </StackPane>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="28.0" prefWidth="408.0" spacing="30.0">
+      <HBox alignment="CENTER" prefHeight="74.0" prefWidth="460.0" spacing="30.0">
          <children>
             <CheckBox mnemonicParsing="false" text="Normal" />
             <Separator orientation="VERTICAL" prefHeight="200.0" />
@@ -68,16 +68,16 @@
             <CheckBox indeterminate="true" mnemonicParsing="false" text="Undefined" />
          </children>
       </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="406.0" spacing="20.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="460.0" spacing="20.0">
          <children>
             <StackPane prefHeight="69.0" prefWidth="114.0">
                <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" stroke="BLACK" strokeDashArray="2" strokeLineCap="BUTT" strokeType="INSIDE" width="93.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e4cb" height="45.0" stroke="BLACK" strokeDashArray="2" strokeLineCap="BUTT" strokeType="INSIDE" width="139.0" />
                   <Label text="Progress:" />
                </children>
             </StackPane>
-            <Slider />
-            <ProgressIndicator prefHeight="46.0" prefWidth="30.0" progress="0.0" />
+            <Slider prefHeight="18.0" prefWidth="167.0" />
+            <ProgressIndicator prefHeight="69.0" prefWidth="51.0" progress="0.0" />
          </children>
       </HBox>
    </children>
