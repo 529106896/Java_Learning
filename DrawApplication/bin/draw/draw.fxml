@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="draw.drawAppController">
+   <left>
+      <VBox prefHeight="487.0" prefWidth="142.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Count：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="countLabel" text="0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" prefHeight="164.0" prefWidth="142.0" spacing="20.0">
+               <children>
+                  <Button fx:id="drawButton" mnemonicParsing="false" onAction="#drawButtonPressed" prefHeight="31.0" prefWidth="123.0" text="Draw" />
+                  <Button fx:id="undoButton" mnemonicParsing="false" onAction="#undoButtonPressed" prefHeight="31.0" prefWidth="125.0" text="Undo" />
+                  <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonPressed" prefHeight="31.0" prefWidth="124.0" text="Clear" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="drawingAreaPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
